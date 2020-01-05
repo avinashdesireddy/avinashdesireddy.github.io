@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+}
+
+.banner {
+    height : 70%;
+    position: relative;
+    border-radius: 0px;
+    background-image: url(../img/main-banner.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 95%;
+    transform: translate3d(0px, 0px, 0px);
+}
+.topics {
+    height: 30%;
+}
+
+.topics .card {
+    height: 100%;
+    text-align: center;
+}
+
+.banner .content {
+    padding: 25px;
+    position: absolute;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    bottom: 0px;
+}
+
+.banner .title, .card-title {
+    text-transform: uppercase;
+}
+
+.banner .tag {
+    text-align: center;
+}
