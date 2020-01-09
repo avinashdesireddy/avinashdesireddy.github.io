@@ -1,7 +1,20 @@
 from flask import Flask
 from flask import render_template
-app = Flask(__name__)
+from flaskext.markdown import Markdown
+import os
 
+app = Flask(__name__)
+Markdown(app)
+
+def get_articles(type="tech"):
+    print("Get articles")
+    articles = {}
+    entries = os.listdir('articles')
+    for article in entries:
+        content = open("articles/" + article, 'r').read()
+        articles[article.split('.')[0]] = {'title': article, 'description': '', 'content': content}
+
+    return articles
 
 @app.route("/")
 def index():
@@ -9,48 +22,27 @@ def index():
 
 @app.route("/tech")
 def techSpace():
-    pageTitle = ""
-    articles = [{
-        "title": "Blog 1",
-        "description": "Blog 1 Desc",
-        "content": ''' Blog 1
-        abcd
-        efg
-        '''
-    }, {
-        "title": "Blog 2",
-        "description": "Blog 2 Desc",
-        "content": ''' Blog 2 Content '''
-    }, {
-        "title": "Blog 3",
-        "description": "Blog 3 Desc",
-        "content": ''' Blog 3 Content '''
-    }, {
-        "title": "Blog 4",
-        "description": "Blog 4 Desc",
-        "content": ''' Blog 4 Content '''
-    }, {
-        "title": "Blog 5",
-        "description": "Blog 5 Desc",
-        "content": ''' Blog 5 Content '''
-    }, {
-        "title": "Blog 6",
-        "description": "Blog 6 Desc",
-        "content": ''' Blog 6 Content '''
-    }, {
-        "title": "Blog 7",
-        "description": "Blog 7 Desc",
-        "content": ''' Blog 7 Content '''
-    }, {
-        "title": "Blog 8",
-        "description": "Blog 8 Desc",
-        "content": ''' Blog 8 Content '''
-    }]
-    return render_template('blog.html', pageTitle="Running Journey", articles=articles)
+    pageTitle = "Tech Space"
+    articles = get_articles()
+    content = open("articles/kube-install.md", 'r').read()
+    return render_template('bloglist.html', pageTitle=pageTitle, articles=articles, markup_content=content)
+
+@app.route("/tech/<id>/data")
+def getArticleContent(id):
+    article = get_articles()[id]
+    return article.content
+
+@app.route("/tech/<id>")
+def articleView(id):
+    print("Viewing article: " + id)
+    article = get_articles()[id]
+    return render_template('blog-content.html', article=article, articles=get_articles())
 
 @app.route("/running")
 def runningJourney():
     return render_template('blog.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.jinja_env.auto_reload = True
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
+    app.run(debug=True)

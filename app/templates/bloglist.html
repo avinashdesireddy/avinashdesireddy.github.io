@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row justify-content-md-center">
+  <div class="col-8">
+    <h1> {{ pageTitle }} </h1>
+    <hr />
+    {% for id, article in articles.items() %}
+      <a href="/tech/{{ id }}" class="card list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-2 h5">{{ article.title }}</h5>
+          <small>3 days ago</small>
+        </div>
+        <p class="mb-2">{{ article.description }}</p>
+        <small>Avinash Desireddy</small>
+      </a>
+      {% endfor %}
+  </div>
+</div>
+{% endblock %}
