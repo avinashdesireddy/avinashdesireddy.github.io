@@ -20,56 +20,380 @@
 </head>
 
 <body>
-  <div class="banner card bg-dark text-white">
-    <div class="container-fluid content">
-      <h1 class="card-title">Avinash Desireddy</h1>
-      <p class="card-text">Technologist | Runner</p>
+  <!-- Main navigation -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">AD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto smooth-scroll">
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-offset="90">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#runningjourney" data-offset="90">Running Journey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery" data-offset="90">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials" data-offset="30">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#articles" data-offset="90">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+            </li>
+          </ul>
+          <!-- Social Icon  -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-facebook light-green-text-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-twitter light-green-text-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-instagram light-green-text-2"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+    <div id="intro-section" class="view">
+      <!-- <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline
+                autoplay muted loop>
+                <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+            </video> -->
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container px-md-3 px-sm-0">
+          <!--Grid row-->
+          <div class="row wow fadeIn">
+            <!--Grid column-->
+            <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+              <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Avinash Desireddy</h3>
+              <hr class="hr-light my-4 w-50">
+              <h4 class="subtext-header mt-2 mb-4">Runner, Problem Solver and Solutions Architect</h4>
+              <!-- <a href="#!" class="btn btn-rounded btn-outline-white">
+                                <i class="fa fa-home"></i> Visit us
+                            </a> -->
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
     </div>
-  </div>
+    <!-- Full Page Intro -->
+  </header>
 
-  <div class="card-group topics">
-    <div class="card content">
-      <div class="card-body">
-        <h5 class="card-title">Tech Space</h5>
-      </div>
-      <div style="padding: 15px;">
-        <!--Linkedin-->
-        <button type="button" class="btn btn-li"><i class="fab fa-linkedin-in"></i></button>
-        <!--Stack Overflow-->
-        <button type="button" class="btn btn-so"><i class="fab fa-stack-overflow"></i></button>
-        <!--Slack-->
-        <button type="button" class="btn btn-slack"><i class="fab fa-slack-hash"></i></button>
-        <!--Github-->
-        <button type="button" class="btn btn-git"><i class="fab fa-github"></i></button>
-      </div>
-    </div>
-    <div class="card content">
-      <div class="card-body">
-        <h5 class="card-title">My Running Journey</h5>
-      </div>
-      <div style="padding: 15px;">
-        <!--Facebook-->
-        <button type="button" class="btn btn-fb"><i class="fab fa-facebook-f"></i></button>
-        <!--Twitter-->
-        <button type="button" class="btn btn-tw"><i class="fab fa-twitter"></i></button>
-        <!--Instagram-->
-        <button type="button" class="btn btn-ins"><i class="fab fa-instagram"></i></button>
-        <!--Youtube-->
-        <button type="button" class="btn btn-svg"><i class="fab fa-strava"></i></button>
-      </div>
-    </div>
+  <!--Main layout-->
+  <main>
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+    <!--Section: about-->
+    <section id="about" class="py-5">
+
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Who am I?</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">
+
+        </p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-lg-5 text-center text-lg-left">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg"
+              alt="Sample image">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-7">
+
+            <!-- Grid row -->
+            <div class="row mb-3">
+
+              <!-- Grid column -->
+              <div class="col-1">
+                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-xl-10 col-md-11 col-10">
+                <h5 class="font-weight-bold mb-3">Runner</h5>
+                <p class="grey-text">I’m a serial hobbyist.
+                  Running - Recently finished my 1st Marathon & training for new PR
+                  Learning about Sports nutrition & Healthy Eating
+                  Netflix/Youtube addict
+
+                  Over 25+ years of industry experience in architecture, design, development, and delivery of web and
+                  windows applications on various platforms. Passionate about serverless architectures, cloud
+                  technologies, micro-services architectures, and open source; works collaboratively with team members
+                  to achieve goals; persistent & creative problem solver, and familiar with leading edge development
+                  paradigms. Communicates effectively with both technical & business counterparts, understands business
+                  needs and creates tools to manage them.
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Container -->
+
+    </section>
+    <!--Section: about-->
+
+    <!--Section: projects-->
+    <section id="runningjourney" class="text-center py-5" style="background-color: #eee;">
+      <!-- Container -->
+      <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5">My Running Journey</h2>
+        <!-- Section description -->
+        <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+
+        <!-- Grid row -->
+        <div class="row text-center">
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-lg-4 mb-4">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid"
+                alt="Sample project image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Marathon Finisher</h4>
+              <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                necessitatibus saepe eveniet ut et voluptates repudiandae.
+              </p>
+              <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid"
+                alt="Sample project image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Run/Walk/Run</h4>
+              <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                necessitatibus saepe eveniet ut et voluptates repudiandae.
+              </p>
+              <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid"
+                alt="Sample project image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Too Hot Too Cold</h4>
+              <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                necessitatibus saepe eveniet ut et voluptates repudiandae.
+              </p>
+              <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i>View project</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid"
+                alt="Sample project image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Too Hot Too Cold</h4>
+              <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                necessitatibus saepe eveniet ut et voluptates repudiandae.
+              </p>
+              <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i>View project</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid"
+                alt="Sample project image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Too Hot Too Cold</h4>
+              <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                necessitatibus saepe eveniet ut et voluptates repudiandae.
+              </p>
+              <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i>View project</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-6">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid"
+                alt="Sample project image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Excerpt-->
+            <div class="card-body pb-0">
+              <h4 class="font-weight-bold my-3">Too Hot Too Cold</h4>
+              <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                necessitatibus saepe eveniet ut et voluptates repudiandae.
+              </p>
+              <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i>View project</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Container -->
+
+    </section>
+    <!--Section: projects-->
+  </main>
+  <!--Main layout-->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/avinashdesireddy" target="_blank">
+            <i class="fab fa-facebook"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1" href="https://twitter.com/avinashdesiredd" target="_blank">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-github mx-1" href="https://github.com/avinashdesireddy" target="_blank">
+            <i class="fab fa-github"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/avinashdesireddy/" target="_blank">
+            <i class="fab fa-linkedin"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="">Avinash Desireddy</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+
+  <script type="text/javascript">
+    // MDB Lightbox Init
+    $(function () {
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
+
+    // Adding animations to the sections
+    $("section").addClass("wow fadeIn");
+
+    // Animations Init
+    new WOW().init();
+  </script>
 </body>
 
 </html>
