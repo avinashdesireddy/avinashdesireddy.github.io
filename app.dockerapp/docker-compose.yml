@@ -1,0 +1,7 @@
+version: "3.6"
+services:
+  flask:
+    build: app
+    image: docker.io/avinashdesireddy/avinashdesireddy.com
+    ports:
+    - ${flask.port}:5000
