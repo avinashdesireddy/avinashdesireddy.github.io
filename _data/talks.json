@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2026",
+    "title": "Agentic AI on Kubernetes — Practitioner Roundtable",
+    "venue": "KubeCon NA 2026 · co-organizer",
+    "detail": "inference · model customization · agentic infrastructure patterns",
+    "url": null,
+    "tags": ["gpu", "agentic", "kubernetes"],
+    "links": []
+  },
+  {
+    "date": "2026",
+    "title": "Modernizing VMware Applications with Agentic AI",
+    "venue": "AWS Hands-On Workshop",
+    "detail": "Kiro + ECS/EKS · AI-driven containerization of Java apps",
+    "url": null,
+    "tags": ["agentic", "containers", "eks"],
+    "links": []
+  },
+  {
+    "date": "2022",
+    "title": "Lightning Talk: Intro to Lens and Lens Extensions",
+    "venue": "Open Source Summit NA 2022 · Linux Foundation",
+    "detail": null,
+    "url": "https://ossna2022.sched.com/event/11Nm7/lightning-talk-intro-to-lens-and-lens-extensions-avinash-reddy-desireddy-mirantis-inc",
+    "tags": ["containers", "kubernetes"],
+    "links": [
+      { "label": "slides", "url": "https://static.sched.com/hosted_files/ossna2022/57/OSS-NA22-PPT.pdf" }
+    ]
+  },
+  {
+    "date": "2022",
+    "title": "Kubernetes Security Workshop",
+    "venue": "Oracle CloudWorld 2022",
+    "detail": null,
+    "url": "https://www.slideshare.net/slideshow/kubernetes-security-workshop/251619768",
+    "tags": ["kubernetes", "security"],
+    "links": [
+      { "label": "slides", "url": "https://www.slideshare.net/slideshow/kubernetes-security-workshop/251619768" },
+      { "label": "repo", "url": "https://github.com/avinashdesireddy/k8s-security-workshop" }
+    ]
+  },
+  {
+    "date": "2022",
+    "title": "EKS Anywhere on VMware Workshop",
+    "venue": "AWS Workshop Catalog",
+    "detail": "67 participants · 8hr → 1.5hr build time",
+    "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/3d814bcf-8dac-499f-98f7-393e15235615/en-US",
+    "tags": ["eks", "containers"],
+    "links": [
+      { "label": "workshop", "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/3d814bcf-8dac-499f-98f7-393e15235615/en-US" }
+    ]
+  },
+  {
+    "date": "2022",
+    "title": "Health checking mechanisms in Kubernetes",
+    "venue": "Mirantis Tech Talk",
+    "detail": null,
+    "url": "https://www.mirantis.com/labs/learning/techtalks/improving-application-stability-with-k8s-health-checks-start-up-liveness-readiness-probes/",
+    "tags": ["kubernetes", "containers"],
+    "links": [
+      { "label": "recording", "url": "https://www.youtube.com/watch?v=kYXiS7rIWzg" }
+    ]
+  },
+  {
+    "date": "2022",
+    "title": "Lens 6 deep-dive",
+    "venue": "Mirantis Webinar",
+    "detail": null,
+    "url": null,
+    "tags": ["containers", "kubernetes"],
+    "links": []
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "date": "2025-05-01",
+    "title": "Build end-to-end Apache Spark pipelines with Amazon MWAA, Batch Processing Gateway, and EMR on EKS",
+    "url": "https://aws.amazon.com/blogs/big-data/build-end-to-end-apache-spark-pipelines-with-amazon-mwaa-batch-processing-gateway-and-amazon-emr-on-eks-clusters/",
+    "tags": ["data", "eks"],
+    "venue": "AWS Big Data Blog",
+    "status": "published",
+    "links": [
+      { "label": "repo", "url": "https://github.com/aws-samples/sample-mwaa-bpg-emr-on-eks-spark-pipeline" }
+    ]
+  },
+  {
+    "date": "2025-02-28",
+    "title": "Design patterns for implementing Hive Metastore for Amazon EMR on EKS",
+    "url": "https://aws.amazon.com/blogs/big-data/design-patterns-for-implementing-hive-metastore-for-amazon-emr-on-eks/",
+    "tags": ["data", "eks"],
+    "venue": "AWS Big Data Blog",
+    "status": "published",
+    "links": [
+      { "label": "repo", "url": "https://github.com/aws-samples/sample-emr-eks-hive-metastore-patterns" }
+    ]
+  },
+  {
+    "date": "2022-10-18",
+    "title": "Lens Kubernetes is all you need in the development env to build, ship, and run",
+    "url": "https://medium.com/k8slens/lens-kubernetes-is-all-you-need-in-the-development-env-to-build-ship-and-run-5c1980a12fcf",
+    "tags": ["containers", "kubernetes"],
+    "venue": "Lens / Medium · top-10 all-time",
+    "status": "published",
+    "links": []
+  },
+  {
+    "date": "2022-09-27",
+    "title": "Eliminating Kubernetes Complexity for Developers Using Lens",
+    "url": "https://medium.com/k8slens/eliminating-kubernetes-complexity-for-developers-using-lens-5c199e5aff4e",
+    "tags": ["containers", "kubernetes"],
+    "venue": "Lens / Medium",
+    "status": "published",
+    "links": []
+  },
+  {
+    "date": "2022-06-07",
+    "title": "Lens Extension for Docker Desktop",
+    "url": "https://avinashdesireddy.medium.com/lens-extension-for-docker-desktop-ab5612eca027",
+    "tags": ["containers"],
+    "venue": "Medium",
+    "status": "published",
+    "links": []
+  },
+  {
+    "date": "2022-06-01",
+    "title": "3 key elements to protect a Kubernetes cluster",
+    "url": "https://medium.com/mirantis/3-key-elements-to-protect-a-kubernetes-cluster-d9dc614cf952",
+    "tags": ["kubernetes", "security"],
+    "venue": "Mirantis · originally published by Help Net Security",
+    "status": "published",
+    "links": []
+  },
+  {
+    "date": "2022-03-18",
+    "title": "Repositories, Container Images and Tags in Mirantis Secure Registry",
+    "url": "https://medium.com/mirantis/repositories-container-images-tags-in-msr-db811e0566e6",
+    "tags": ["containers", "security"],
+    "venue": "Mirantis / Medium",
+    "status": "published",
+    "links": []
+  },
+  {
+    "date": "2022-03-01",
+    "title": "Deploy Mirantis Secure Registry on any Kubernetes Distribution",
+    "url": "https://www.mirantis.com/blog/deploy-mirantis-secure-registry-on-any-kubernetes-distro/",
+    "tags": ["containers", "kubernetes"],
+    "venue": "Mirantis.com · republished with attribution",
+    "status": "published",
+    "links": []
+  }
+]

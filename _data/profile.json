@@ -1,0 +1,17 @@
+{
+  "name": "Avinash Desireddy",
+  "handle": "@i__avinash",
+  "bio": [
+    "Solutions Architect at AWS. I help customers modernize applications, build data platforms on EKS, and run GPU and agentic workloads at production scale.",
+    "Based in Austin, TX."
+  ],
+  "tagline": "The gap between what the docs say and what production requires — that's what I write about.",
+  "links": [
+    { "label": "LinkedIn",    "url": "https://www.linkedin.com/in/avinashdesireddy/" },
+    { "label": "GitHub",      "url": "https://github.com/avinashdesireddy" },
+    { "label": "Medium",      "url": "https://medium.com/@avinashdesireddy" },
+    { "label": "@i__avinash", "url": "https://twitter.com/i__avinash" },
+    { "label": "About me",    "url": "/about/" }
+  ],
+  "analytics": "G-C2WFG0MT1T"
+}
