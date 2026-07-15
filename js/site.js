@@ -111,7 +111,6 @@
 
     var container = document.getElementById('posts-container');
     container.innerHTML = '';
-    container.appendChild(el('div', { className: 'section-head', textContent: 'Writing' }));
 
     /* group by year */
     var byYear = {}, yearOrder = [];
@@ -161,11 +160,38 @@
     });
   }
 
+  /* ── workshops ── */
+  function renderWorkshops(items) {
+    var container = document.getElementById('workshops-container');
+    container.innerHTML = '';
+    container.appendChild(el('div', { className: 'section-head workshops-head', textContent: 'Workshops' }));
+
+    items.forEach(function (t) {
+      var row = el('div', { className: 'talk-row', 'data-tags': (t.tags || []).join(',') });
+      row.appendChild(el('div', { className: 'tdate', textContent: t.date || '—' }));
+
+      var info = el('div', null);
+      var titleNode = t.url
+        ? el('a', { className: 'ttitle', href: t.url, target: '_blank', rel: 'noopener', textContent: t.title })
+        : el('div', { className: 'ttitle', textContent: t.title });
+      info.appendChild(titleNode);
+
+      var venueStr = [t.venue, t.detail].filter(Boolean).join(' · ');
+      if (venueStr) info.appendChild(el('div', { className: 'tvenue', textContent: venueStr }));
+
+      var lnks = buildLinks(t.links);
+      if (lnks) info.appendChild(lnks);
+
+      row.appendChild(info);
+      container.appendChild(row);
+    });
+  }
+
   /* ── talks ── */
   function renderTalks(talks) {
     var container = document.getElementById('talks-container');
     container.innerHTML = '';
-    container.appendChild(el('div', { className: 'section-head talks-head', textContent: 'Workshops & talks' }));
+    container.appendChild(el('div', { className: 'section-head talks-head', textContent: 'Talks' }));
 
     talks.forEach(function (t) {
       var row = el('div', { className: 'talk-row', 'data-tags': (t.tags || []).join(',') });
@@ -216,6 +242,43 @@
     });
   }
 
+  /* ── tabs ── */
+  function renderTabs(tabs) {
+    var tabBar = document.getElementById('tab-bar');
+    tabBar.innerHTML = '';
+    tabs.forEach(function (t, i) {
+      tabBar.appendChild(el('button', {
+        className: 'tab' + (i === 0 ? ' active' : ''),
+        'data-tab': t.key,
+        role: 'tab',
+        'aria-selected': i === 0 ? 'true' : 'false',
+        textContent: t.label
+      }));
+    });
+  }
+
+  function initTabs() {
+    var tabBar = document.getElementById('tab-bar');
+    tabBar.addEventListener('click', function (e) {
+      if (!e.target.matches('.tab')) return;
+      tabBar.querySelectorAll('.tab').forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      e.target.classList.add('active');
+      e.target.setAttribute('aria-selected', 'true');
+
+      var target = e.target.dataset.tab;
+      document.querySelectorAll('.tab-panel').forEach(function (p) {
+        if (target === 'all') {
+          p.classList.add('active');
+        } else {
+          p.classList.toggle('active', p.id === target + '-container');
+        }
+      });
+    });
+  }
+
   /* ── filter (posts + talks) ── */
   function initFilter() {
     var filterEl = document.getElementById('tag-filter');
@@ -247,13 +310,18 @@
   Promise.all([
     fetchJSON('_data/profile.json'),
     fetchJSON('_data/posts.json'),
+    fetchJSON('_data/workshops.json'),
     fetchJSON('_data/talks.json'),
-    fetchJSON('_data/oss.json')
+    fetchJSON('_data/oss.json'),
+    fetchJSON('_data/tabs.json')
   ]).then(function (results) {
     renderSidebar(results[0]);
     renderPosts(results[1]);
-    renderTalks(results[2]);
-    renderOSS(results[3]);
+    renderWorkshops(results[2]);
+    renderTalks(results[3]);
+    renderOSS(results[4]);
+    renderTabs(results[5]);
+    initTabs();
     initFilter();
   }).catch(function (err) {
     console.error('Site data load error:', err);

@@ -1,0 +1,7 @@
+[
+  { "key": "all", "label": "All" },
+  { "key": "posts", "label": "Writing" },
+  { "key": "workshops", "label": "Workshops" },
+  { "key": "talks", "label": "Talks" },
+  { "key": "oss", "label": "Open source" }
+]

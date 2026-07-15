@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026",
+    "title": "Application Modernization with Agentic AI",
+    "venue": "AWS Hands-On Workshop",
+    "detail": "AI now automates the cloud-native development tasks that once demanded deep specialization. In this workshop, you'll learn to assess, modernize, and deploy applications hands-on using Agentic IDEs, ATX, and ISV tooling.",
+    "url": "https://catalog.workshops.aws/agentic-application-modernization/en-US",
+    "tags": ["agentic", "containers", "eks"],
+    "links": [
+      { "label": "workshop", "url": "https://catalog.workshops.aws/agentic-application-modernization/en-US" }
+    ]
+  },
+  {
+    "date": "2024",
+    "title": "EKS Anywhere on VMware Workshop",
+    "venue": "AWS Workshop Catalog",
+    "detail": "Lern how to provision Amazon EKS Anywhere cluster on VMware vSphere environment and dive-into the EKS-A cluster capabilities.",
+    "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/3d814bcf-8dac-499f-98f7-393e15235615/en-US",
+    "tags": ["eks", "containers"],
+    "links": [
+      { "label": "workshop", "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/3d814bcf-8dac-499f-98f7-393e15235615/en-US" }
+    ]
+  }
+]

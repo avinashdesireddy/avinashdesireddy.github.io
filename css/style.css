@@ -122,8 +122,40 @@ a:hover { color: var(--accent); }
   font-style: italic;
   font-size: 0.9rem;
   color: var(--ink2);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
+
+/* ── Tabs ── */
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--rule);
+}
+.tab {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.55rem 1rem;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  background: transparent;
+  color: var(--ink2);
+  cursor: pointer;
+  margin-bottom: -2px;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
+}
+.tab:hover { color: var(--ink); background: color-mix(in srgb, var(--rule) 40%, transparent); }
+.tab.active {
+  color: var(--accent);
+  background: var(--bg);
+  border-color: var(--rule);
+  border-bottom: 2px solid var(--bg);
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
 
 .section-head {
   font-family: var(--mono);
@@ -213,8 +245,11 @@ a.ptitle:hover { color: var(--accent); }
   text-decoration: none;
 }
 
+/* ── Workshops ── */
+.workshops-head { margin-top: 2rem; }
+
 /* ── Talks ── */
-.talks-head { margin-top: 2.75rem; }
+.talks-head { margin-top: 2rem; }
 
 .talk-row {
   display: grid;
@@ -246,7 +281,7 @@ a.ttitle:hover { color: var(--accent); }
 }
 
 /* ── Open source section ── */
-.oss-head { margin-top: 2.75rem; }
+.oss-head { margin-top: 2rem; }
 
 .oss-row {
   padding: 0.55rem 0;
