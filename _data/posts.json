@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-07-15",
+    "title": "High-performance Remote Shuffle Service on Amazon EMR with Apache Celeborn",
+    "url": "https://aws.amazon.com/blogs/big-data/high-performance-remote-shuffle-service-on-amazon-emr-with-apache-celeborn/",
+    "tags": ["data", "eks"],
+    "venue": "AWS Big Data Blog",
+    "status": "published",
+    "links": [
+      { "label": "repo", "url": "https://github.com/aws-samples/sample-emr-celeborn-shuffle-service.git" }
+    ]
+  },
+  {
+    "date": "2026-04-13",
+    "title": "Implementing Kerberos authentication for Apache Spark jobs on Amazon EMR on EKS to access a Kerberos-enabled Hive Metastore",
+    "url": "https://aws.amazon.com/blogs/big-data/implementing-kerberos-authentication-for-apache-spark-jobs-on-amazon-emr-on-eks-to-access-a-kerberos-enabled-hive-metastore",
+    "tags": ["data", "eks", "security"],
+    "venue": "AWS Big Data Blog",
+    "status": "published",
+    "links": [
+      { "label": "repo", "url": "https://github.com/aws-samples/sample-emr-celeborn-shuffle-service.git" }
+    ]
+  },
+  {
     "date": "2025-05-01",
     "title": "Build end-to-end Apache Spark pipelines with Amazon MWAA, Batch Processing Gateway, and EMR on EKS",
     "url": "https://aws.amazon.com/blogs/big-data/build-end-to-end-apache-spark-pipelines-with-amazon-mwaa-batch-processing-gateway-and-amazon-emr-on-eks-clusters/",

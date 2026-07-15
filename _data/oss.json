@@ -1,9 +1,10 @@
 [
   {
+    "date": "2023",
     "title": "CodeCatalyst CloudFront Cache Invalidation Action",
     "description": "A CodeCatalyst workflow action to invalidate CloudFront distributions on deploy. Listed in AWS CodeCatalyst Labs.",
     "url": "https://github.com/aws-samples/codecatalyst-cloudfront-invalidation-sample",
-    "stat": "1,781 adoptions",
+    "stat": "",
     "tags": ["aws", "devops"]
   }
 ]

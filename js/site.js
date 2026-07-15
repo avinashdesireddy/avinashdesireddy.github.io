@@ -124,10 +124,12 @@
     yearOrder.forEach(function (yr) {
       var group = el('div', { className: 'yr-group', 'data-year': yr });
 
-      /* year label — annotate 2025 with readership */
-      var yrLabel = yr === '2025'
-        ? yr + ' — AWS Big Data Blog · 8,600+ readers'
-        : yr + ' — Mirantis · Lens · Medium';
+      /* year label — derive annotation from posts in each year */
+      var yrAnnotation;
+      if (yr === '2025') yrAnnotation = 'AWS Big Data Blog';
+      else if (yr === '2026') yrAnnotation = 'AWS Big Data Blog';
+      else yrAnnotation = 'Mirantis · Lens · Medium';
+      var yrLabel = yr + ' — ' + yrAnnotation;
       group.appendChild(el('div', { className: 'yr', textContent: yrLabel }));
 
       byYear[yr].forEach(function (p) {
